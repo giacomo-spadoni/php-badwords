@@ -5,6 +5,8 @@ $cognome = $_GET["cognome"];
 $nomecognome = $nome . " " . $cognome;
 
 $nomecognomeinmaiuscolo = ucfirst($nome) . " " . ucfirst($cognome);
+
+$nomecognomelunghezza = strlen($nome) + strlen($cognome)
 ?>
 
 
@@ -18,5 +20,6 @@ $nomecognomeinmaiuscolo = ucfirst($nome) . " " . ucfirst($cognome);
 <body>
     <h1>Hello! <?php echo $nomecognome; ?></h1>
     <h2>Hello! <?php echo $nomecognomeinmaiuscolo; ?></h2>
+    <h2>la stringa è lunga <?php echo $nomecognomelunghezza; ?> caratteri</h2>
 </body>
 </html>
