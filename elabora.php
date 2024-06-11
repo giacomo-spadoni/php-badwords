@@ -2,11 +2,17 @@
 
 $nome = $_GET["nome"];
 $cognome = $_GET["cognome"];
+$parolaccia = $_GET["parolaccia"];
+
 $nomecognome = $nome . " " . $cognome;
 
 $nomecognomeinmaiuscolo = ucfirst($nome) . " " . ucfirst($cognome);
 
-$nomecognomelunghezza = strlen($nome) + strlen($cognome)
+$nomecognomelunghezza = strlen($nome) + strlen($cognome);
+
+$paroladacensurare = "porco";
+
+$parolacciacensurata = str_replace($paroladacensurare, "***", $parolaccia);
 ?>
 
 
@@ -20,6 +26,7 @@ $nomecognomelunghezza = strlen($nome) + strlen($cognome)
 <body>
     <h1>Hello! <?php echo $nomecognome; ?></h1>
     <h2>Hello! <?php echo $nomecognomeinmaiuscolo; ?></h2>
+    <h2>la parolaccia è <?php echo $parolacciacensurata; ?></h2>
     <h2>la stringa è lunga <?php echo $nomecognomelunghezza; ?> caratteri</h2>
 </body>
 </html>

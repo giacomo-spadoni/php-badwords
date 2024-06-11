@@ -9,6 +9,7 @@
     <form action="elabora.php" method="GET">
         <input type="text" name="nome" placeholder="inserire nome">
         <input type="text" name="cognome" placeholder="inserire cognome">
+        <input type="text" name="parolaccia" placeholder="inserire parolaccia">
         <button type="submit">invia tutto</button>
     </form>
 </body>
